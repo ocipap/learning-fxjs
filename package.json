@@ -1,0 +1,15 @@
+{
+  "name": "learning-fxjs",
+  "version": "1.0.0",
+  "description": "여러가지 fx.js의 유틸 함수를 만들면서 원리를 이해합니다.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "PAPICO",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
+  }
+}
