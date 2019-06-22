@@ -1,14 +1,14 @@
-function curry() {}
+const curry = () => {}
 
-function map() {}
+const map = () => {}
 
-function filter() {}
+const filter = () => {}
 
-function reduce () {}
+const reduce = () => {}
 
-function pipe() {}
+const pipe = () => {}
 
-function go() {}
+const go = () => {}
 
 export {
   curry,
