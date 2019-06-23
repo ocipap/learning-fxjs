@@ -1,0 +1,20 @@
+{
+  "name": "learning-fxjs",
+  "version": "1.0.0",
+  "description": "여러가지 fx.js의 유틸 함수를 만들면서 원리를 이해합니다.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha "
+  },
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.2.0",
+    "should": "^13.2.3"
+  },
+  "devDependencies": {
+    "mocha": "^6.1.4"
+  },
+  "author": "PAPICO",
+  "license": "MIT"
+}
