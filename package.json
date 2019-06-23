@@ -4,17 +4,20 @@
   "description": "여러가지 fx.js의 유틸 함수를 만들면서 원리를 이해합니다.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha "
+    "test": "mocha -r babel-core/register index.spec.js"
   },
-  "dependencies": {
+  "author": "PAPICO",
+  "license": "MIT",
+  "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
     "chai": "^4.2.0",
+    "mocha": "^6.1.4",
     "should": "^13.2.3"
   },
-  "devDependencies": {
-    "mocha": "^6.1.4"
-  },
-  "author": "PAPICO",
-  "license": "MIT"
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  }
 }
