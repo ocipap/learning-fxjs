@@ -2,7 +2,7 @@
 
 level1 에서 작성한 함수들을 응용한 함수들 구현
 
-### pluck  
+### pluck (curry)
 key를 통해 객체배열의 value 배열을 리턴
 ```js
 const arr = [
@@ -17,7 +17,7 @@ pluck('age', arr)
 // [10, 20, 30, 40, 50]
 ```
 
-### reject
+### reject (curry)
 filter 함수와 반대로 거짓으로 평가되는 값을 리턴
 ```js
 const arr = [1, 2, 3, 4, 5]
@@ -35,7 +35,7 @@ compact(arr)
 // [1, 2, 3]
 ```
 
-### find
+### find (curry)
 요소중 조건이 참이되는 첫번째 값을 리턴
 ```js
 const arr = [11, 3, 4, 18, 19]
@@ -43,14 +43,14 @@ find(v => v < 4, arr)
 // [3]
 ```
 
-### some
+### some (curry)
 요소들중 하나라도 조건에 참이 있으면 true, 그렇지 않다면 false
 ```js
 some(v => v, [false, false, false, true])
 // true
 ```
 
-### every
+### every (curry)
 요소들 전체가 조건에 참이라면 true, 그렇지 않다면 false
 ```js
 every(v => v, [true, true, true])
