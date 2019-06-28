@@ -40,7 +40,7 @@ compact(arr)
 ```js
 const arr = [11, 3, 4, 18, 19]
 find(v => v < 4, arr)
-// [3]
+// 3
 ```
 
 ### some (curry)

@@ -60,17 +60,17 @@ describe("::: compact function", () => {
 describe("::: find function", () => {
   it("배열 Test", () => {
     const res = find(v => v > 3, iter)
-    res.should.be.deep.equal([4])
+    res.should.be.equal(4)
   })
 
   it("문자열 Test", () => {
     const res = find(v => v == "C", str)
-    res.should.be.deep.equal(["C"])
+    res.should.be.equal("C")
   })
 
   it("커링 Test", () => {
     const res = find(v => v > 3)(iter)
-    res.should.be.deep.equal([4])
+    res.should.be.equal(4)
   })
 })
 
