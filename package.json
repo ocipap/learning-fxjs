@@ -4,7 +4,7 @@
   "description": "여러가지 fx.js의 유틸 함수를 만들면서 원리를 이해합니다.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -r babel-core/register index.spec.js"
+    "test": "mocha -r babel-core/register -r should index.spec.js"
   },
   "author": "PAPICO",
   "license": "MIT",
