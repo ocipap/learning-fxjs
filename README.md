@@ -36,7 +36,8 @@ compact(arr)
 ```
 
 ### find (curry)
-요소중 조건이 참이되는 첫번째 값을 리턴
+
+요소중 조건이 참이되는 첫번째 값을 리턴, 찾지 못했을 경우 undefined 리턴
 ```js
 const arr = [11, 3, 4, 18, 19]
 find(v => v < 4, arr)
