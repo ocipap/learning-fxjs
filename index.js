@@ -7,29 +7,27 @@ import {
   go
 } from './util'
 
-const pluck = () => {
+const nagate = f => v => !f(v)
 
-}
+const identity = v => v
 
-const reject = () => {
+const pluck = curry((key, iter) => map(a => a[key], iter))
 
-}
+const reject = curry((f, iter) => filter(nagate(f), iter))
 
-const compact = () => {
+const compact = (iter) => filter(identity, iter)
 
-}
+const find = curry((f, iter) => {
+  const res = undefined
+  for(const a of iter) {
+    if(f(a)) return a
+  }
+  return res
+})
 
-const find = () => {
+const some = curry((f, iter) => find(f, iter) !== undefined)
 
-}
-
-const some = () => {
-
-}
-
-const every = () => {
-
-}
+const every = curry((f, iter) => find(nagate(f), iter) === undefined)
 
 export {
   pluck,
