@@ -1,8 +1,4 @@
 import {pluck, reject, compact, find, some, every} from  "./index.js"
-import { describe } from 'mocha'
-import chai from 'chai'
-
-chai.should();
 
 const odd = a => a % 2
 const add = (a, b) => a + b
@@ -23,36 +19,36 @@ const identity = v => v
 describe("::: pluck function", () => {
   it("기능 Test", () => {
     const res = pluck('age', people)
-    res.should.be.deep.equal([10, 20, 30, 40, 50])
+    res.should.be.deepEqual([10, 20, 30, 40, 50])
   })
 
   it("커링 Test", () => {
     const res = pluck('name')(people)
-    res.should.be.deep.equal(['a', 'b', 'c', 'd', 'e'])
+    res.should.be.deepEqual(['a', 'b', 'c', 'd', 'e'])
   })
 })
 
 describe("::: reject function", () => {
   it("배열 Test", () => {
     const res = reject(odd, iter)
-    res.should.be.deep.equal([2, 4])
+    res.should.be.deepEqual([2, 4])
   })
 
   it("문자열 Test", () => {
     const res = reject(v => v.charCodeAt(0) % 2, str);
-    res.should.be.deep.equal(['B', 'D'])
+    res.should.be.deepEqual(['B', 'D'])
   })
 
   it("커링 Test", () => {
     const res = reject(odd)(iter)
-    res.should.be.deep.equal([2, 4])
+    res.should.be.deepEqual([2, 4])
   })
 })
 
 describe("::: compact function", () => {
   it("기능 Test", () => {
     const res = compact([1, 2, 3, undefined, null])
-    res.should.be.deep.equal([1, 2, 3])
+    res.should.be.deepEqual([1, 2, 3])
   })
 })
 
@@ -71,6 +67,11 @@ describe("::: find function", () => {
   it("커링 Test", () => {
     const res = find(v => v > 3)(iter)
     res.should.be.equal(4)
+  })
+
+  it("찾지 못한 경우 undefined 리턴", () => {
+    const res = find(v => v == 1, [2, 3, 4, 5])
+    should(res).be.undefined()
   })
 })
 
