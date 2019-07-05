@@ -22,3 +22,7 @@ fx.js library : https://github.com/marpple/FxJS
 - 기본 유틸 함수인  map, filter, reduce 를 만들어 봅니다.
 - 커링을 지원하는 curry 함수를 만들어 봅니다.
 - 함수 합성을 도와주는 pipe 함수와 go 함수를 만들어 봅나다.
+
+### [level2](https://github.com/ocipap/learning-fxjs/tree/level2)
+- level1 에서 작성했던 유틸 함수를 사용해서 응용 함수를 만들어 봅시다.
+- level2 의 README 에 함수들을 구현해 봅시다.
